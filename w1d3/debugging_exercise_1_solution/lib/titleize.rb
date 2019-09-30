@@ -9,7 +9,7 @@ require "byebug"
 
 def titleize(title)
   little_words = [ "and", "the", "over", "a", "on", "of" ]
-
+  
   words = title.split(" ")
 
   titleized_words = words.map.with_index do |word, i|
@@ -22,3 +22,23 @@ def titleize(title)
 
   titleized_words.join(" ")
 end
+
+
+def prime?(num)
+    #
+    return false if num < 2
+    
+    (2...num).each do |factor|
+      #
+        if num % factor == 0
+          #
+            return false
+        end
+    end
+
+    true
+end
+
+
+
+

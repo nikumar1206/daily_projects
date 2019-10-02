@@ -1,4 +1,4 @@
-require "employee"
+require_relative "employee"
 
 class Startup
   attr_accessor :name, :funding, :salaries, :employees

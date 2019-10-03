@@ -3,6 +3,7 @@
 ## Core Concepts
 
 - Attr methods
+- Syntactic sugar
 
 ## Discussion
 

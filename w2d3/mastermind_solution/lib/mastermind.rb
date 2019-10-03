@@ -1,4 +1,5 @@
 require_relative "code"
+require 'byebug' 
 
 class Mastermind
   def initialize(length)

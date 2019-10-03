@@ -1,5 +1,5 @@
 require "mastermind"
-
+require 'byebug'
 
 describe "Mastermind" do
   let(:mastermind) do

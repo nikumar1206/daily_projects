@@ -61,3 +61,15 @@ class Array
     transposed
   end
 end
+
+class String
+
+  def say_hello
+    puts "Hello"
+  end
+
+  def say_hello
+    puts "this is a second one"
+  end
+
+end

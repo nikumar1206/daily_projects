@@ -5,6 +5,7 @@ class Bootcamp
     @student_capacity = student_capacity
     @teachers = []
     @students = []
+
     @grades = Hash.new { |h, k| h[k] = [] }
   end
 
@@ -59,7 +60,7 @@ class Bootcamp
   end
 
   def average_grade(student)
-    return nil if !self.enrolled?(student) || num_grades(student).zero?
+    return nil if !self.enrolled?(student) || self.num_grades(student).zero?
     @grades[student].sum / self.num_grades(student)
   end
 end

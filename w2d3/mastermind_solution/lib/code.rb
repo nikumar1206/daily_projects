@@ -26,6 +26,7 @@ class Code
     @pegs = pegs.map(&:upcase)
   end
 
+  #bracket method
   def [](index)
     @pegs[index]
   end

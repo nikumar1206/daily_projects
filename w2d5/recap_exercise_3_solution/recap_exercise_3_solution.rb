@@ -138,7 +138,7 @@ end
 
 def prime_factorization(num)
     (2...num).each do |fact|
-        if (num % fact === 0)
+        if (num % fact == 0)
             otherFact = num / fact
             return [ *prime_factorization(fact), *prime_factorization(otherFact) ]
         end

@@ -6,6 +6,24 @@
 - my_flatten
 - require_relative
 
+## Learning Goals
+
+### Enumerables
+
+- Be able to create directories and files from the command line
+- Know how to extend classes
+- Know how to use pry to test methods
+- Be able to write methods that take a block as an argument
+- Get comfortable reasoning about how enumerable methods work with arrays
+
+### Ghost
+
+- Understand how different classes interact
+- Be able to write classes in different files and use `require_relative` to connect them
+- Know how to test methods in pry
+- Know how to read lines from a text file
+- Understand how `__FILE__ == $PROGRAM_NAME` works
+
 ## Discussion
 
 Welcome to the main part of the course! Set some expectations about what will be different from now until the end of their time here:

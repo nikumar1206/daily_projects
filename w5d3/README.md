@@ -5,6 +5,9 @@
 - Creating databases with raw SQL
 - Indexing
 - Joins tables
+- What is an ORM and why?
+- Heredocs
+- Why instantiate models from query results?
 
 ## Learning Goals
 

@@ -1,10 +1,13 @@
-# W5D3
+# W5D4
 
 ## Core Concepts
 
-- What is an ORM and why?
-- Heredocs
-- Why instantiate models from query results?
+- rails g migration <columns>
+- Associations
+- belongs_to/has_many
+- Through Associations
+- Validations
+- Migrations
 
 ## Learning Goals
 

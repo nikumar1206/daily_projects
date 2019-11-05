@@ -20,5 +20,5 @@
 - We want them to know HOW to use the `debugger` in rails. Show them examples of how to debugger controller actions and such.
     - Emphasize where they should put `debugger`s 
     - For example, if the user isn't saving, you should drop a debugger in the `if/else` statements so you can see the errors with `@<resource>.errors.full_messages`. 
-- Reinforce to them that Rails Olympics does not count and they will not be tested on AR Quering for A04. 
+- Reinforce to them that Rails Olympics does not count and they will not be tested on AR Querying for A04. 
 - A04 is released tonight and they should take a look at it. 

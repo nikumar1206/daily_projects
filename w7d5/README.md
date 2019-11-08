@@ -10,14 +10,14 @@
 
 ## CSS Review
 
-Take general questions questions on AA_Times. 
+Take general questions on AA_Times. 
 
-No need to spend too much time here since they've had two days to work on it and should have asked questions during the project. 
+No need to spend too much time here since they should have asked plenty of questions during the two days. 
 
 Consider reviewing these topics:
 - The Box Model: Padding, border, margin
-- Different display properties, specifically block, inline, inline-block and flex 
-- Talk about the position property, specifically `relative` vs `absolute`
+- Different `display` properties. Specifically block, inline, inline-block and flex. 
+- Talk about the `position` property, specifically `relative` vs `absolute`.
 
 Some of them will still hate CSS after today. Tell them that styling is important: recruiters are more likely to take a closer look at their full-stack projects if they look good.
 

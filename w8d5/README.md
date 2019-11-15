@@ -1,23 +1,26 @@
 **Today's learning goals**:
+
 **Callbacks**:
 * Know how to use setInterval to schedule recurring function calls
 * Know how to pass functions into setInterval
 * Be able to set the context of a function
 * Know how to use callbacks to enforce the order of asynchronous function calls
 * Know how to write myBind
+
 **Towers of Hanoi**:
 * Know how to use pseudocode to structure your reasoning
 * Be able to use JavaScript classes and objects in Node
   * Be able to use principle of object-oriented programming in JavaScript
 * Be comfortable testing methods as you write them
 * Be able to implement I/O using readline
+
 **TicTacToe**:
 * Be able to write object-oriented JavaScript programs comfortably
 * Be comfortable using readline in Node
 * Know how to approach creating an AI
 
 
-**Circle time**
+**Circle time**:
 
 - What is the most unexpected/weirdest JS behavior you've run into?
 - What was your greatest achievement of the week?

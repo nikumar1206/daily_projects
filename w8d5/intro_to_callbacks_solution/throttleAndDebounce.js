@@ -12,8 +12,8 @@ Function.prototype.myThrottle = function(interval) {
       setTimeout(() => tooSoon = false, interval);
       this(...args);
     }
-  }
-}
+  };
+};
 
 
 Function.prototype.myDebounce = function(interval) {
@@ -25,7 +25,7 @@ Function.prototype.myDebounce = function(interval) {
     const fnCall = () => {
       timeout = null;
       this(...args);
-    }
+    };
     // each time this function is called, it will clear the previous timeout
     // and create a new one that invokes fnCall after the interval has passed
     // since the timeout is reset every time the function is invoked, 
@@ -33,5 +33,5 @@ Function.prototype.myDebounce = function(interval) {
     // invocations
     clearTimeout(timeout);
     timeout = setTimeout(fnCall, interval);
-  }
-}
+  };
+;}

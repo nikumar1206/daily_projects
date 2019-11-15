@@ -44,7 +44,7 @@ setTimeout(() => console.log("I think it's Friday"), 0);
 
 **Assessment and looking a head**
 - How to prepare for assessments?
-  - They will have access to the prep assessment over the weekend. But they can still study everything we've done in JS so far. It'll be very similar to A01, with the addition of inheritance, currying, and one of myApply or myBind (they haven't seen this last stuff yet).
+  - They will have access to the prep assessment over the weekend. But they can still study everything we've done in JS so far. It'll be very similar to A01, with the addition of one of myApply, myCall or myBind, inheritance and currying (they haven't seen this last stuff yet).
 
 ## Additional Topics:
 - Go over `myThrottle` and `myDebounce` if there is time.

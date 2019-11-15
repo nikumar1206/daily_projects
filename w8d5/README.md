@@ -23,7 +23,7 @@
 - What was your greatest achievement of the week?
 
 # Discussion Topics: 
-- Talk extensively about asynchronicity vs. synchronicity. It’s really important for them to realize that any synchronous code will execute before any synchronous code (no matter how fast the async code should execute. Feel free to show them this example.
+- Talk extensively about asynchronicity vs. synchronicity. It’s really important for them to realize that any synchronous code will execute before any asynchronous code (no matter how fast the async code should execute. Feel free to show them this example.
 ```js
 console.log("Hello!");
 setTimeout(() => console.log("How are you?"), 0);

@@ -1,5 +1,5 @@
 const View = require('./ttt-view');
-const Game = require('../../../ttt_node/solution/game');
+const Game = require('./game');
 
 $( () => {
   const rootEl = $('.ttt');

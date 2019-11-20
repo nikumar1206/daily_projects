@@ -21,7 +21,7 @@
 - Go over TTT solutions. There are a bunch of debuggers in the front-end code and it's bundled up. If you need to re-bundle, run:
 
 ```bash
-webpack tic_tac_toe_solution/src/index.js -o tic_tac_toe_solution/dist/main.js
+webpack tic_tac_toe_solution/src/index.js -o tic_tac_toe_solution/dist/main.js --mode=development
 ```
 
   Talk about exactly what happens when we set everything up and what happens when we click on a square.

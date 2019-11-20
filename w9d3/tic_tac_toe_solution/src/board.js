@@ -1,4 +1,4 @@
-const MoveError = require("./moveError");
+const MoveError = require('./moveError');
 
 class Board {
   constructor() {
@@ -10,7 +10,7 @@ class Board {
       throw new MoveError('Is not valid position!');
     }
 
-    return (this.grid[pos[0]][pos[1]] === null);
+    return this.grid[pos[0]][pos[1]] === null;
   }
 
   isOver() {
@@ -42,9 +42,7 @@ class Board {
     for (let rowIdx = 0; rowIdx < 3; rowIdx++) {
       const marks = [];
       for (let colIdx = 0; colIdx < 3; colIdx++) {
-        marks.push(
-          this.grid[rowIdx][colIdx] ? this.grid[rowIdx][colIdx] : " "
-        );
+        marks.push(this.grid[rowIdx][colIdx] ? this.grid[rowIdx][colIdx] : ' ');
       }
       strs.push(`${marks.join('|')}\n`);
     }
@@ -64,7 +62,7 @@ class Board {
       [[0, 2], [1, 2], [2, 2]],
       // diagonals
       [[0, 0], [1, 1], [2, 2]],
-      [[2, 0], [1, 1], [0, 2]]
+      [[2, 0], [1, 1], [0, 2]],
     ];
 
     for (let i = 0; i < posSeqs.length; i++) {
@@ -99,10 +97,7 @@ class Board {
   }
 
   static isValidPos(pos) {
-    return (0 <= pos[0]) &&
-    (pos[0] < 3) &&
-    (0 <= pos[1]) &&
-    (pos[1] < 3);
+    return 0 <= pos[0] && pos[0] < 3 && 0 <= pos[1] && pos[1] < 3;
   }
 
   static makeGrid() {

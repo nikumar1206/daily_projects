@@ -1,5 +1,6 @@
 class View {
   constructor(game, $el) {
+    debugger;
     this.game = game;
     this.$el = $el;
 
@@ -8,21 +9,24 @@ class View {
   }
 
   bindEvents() {
+    debugger;
     // install a handler on the `li` elements inside the board.
-    this.$el.on("click", "li", ( event => {
+    this.$el.on('click', 'li', event => {
+      debugger;
       const $square = $(event.currentTarget);
       this.makeMove($square);
-    }));
+    });
   }
 
   makeMove($square) {
-    const pos = $square.data("pos");
+    debugger;
+    const pos = $square.data('pos');
     const currentPlayer = this.game.currentPlayer;
 
     try {
       this.game.playMove(pos);
     } catch (e) {
-      alert("This " + e.msg.toLowerCase());
+      alert('This ' + e.msg.toLowerCase());
       return;
     }
 
@@ -30,11 +34,11 @@ class View {
 
     if (this.game.isOver()) {
       // cleanup click handlers.
-      this.$el.off("click");
-      this.$el.addClass("game-over");
+      this.$el.off('click');
+      this.$el.addClass('game-over');
 
       const winner = this.game.winner();
-      const $figcaption = $("<figcaption>");
+      const $figcaption = $('<figcaption>');
 
       if (winner) {
         this.$el.addClass(`winner-${winner}`);
@@ -48,12 +52,13 @@ class View {
   }
 
   setupBoard() {
-    const $ul = $("<ul>");
+    debugger;
+    const $ul = $('<ul>');
 
     for (let rowIdx = 0; rowIdx < 3; rowIdx++) {
       for (let colIdx = 0; colIdx < 3; colIdx++) {
-        let $li = $("<li>");
-        $li.data("pos", [rowIdx, colIdx]);
+        let $li = $('<li>');
+        $li.data('pos', [rowIdx, colIdx]);
 
         $ul.append($li);
       }

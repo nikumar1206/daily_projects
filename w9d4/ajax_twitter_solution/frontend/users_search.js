@@ -16,8 +16,9 @@ class UsersSearch {
       this.renderResults([]);
       return;
     }
-    APIUtil.searchUsers(this.$input.val())
-      .then(users => this.renderResults(users));
+    APIUtil.searchUsers(this.$input.val()).then(users =>
+      this.renderResults(users)
+    );
   }
 
   renderResults(users) {
@@ -31,9 +32,10 @@ class UsersSearch {
       $a.attr('href', `/users/${user.id}`);
 
       const $followToggle = $('<button></button>');
+      debugger;
       new FollowToggle($followToggle, {
         userId: user.id,
-        followState: user.followed ? 'followed' : 'unfollowed'
+        followState: user.followed ? 'followed' : 'unfollowed',
       });
 
       const $li = $('<li></li>');

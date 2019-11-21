@@ -1,43 +1,49 @@
 const APIUtil = {
+  followUser: id => {
+    debugger;
+    return APIUtil.changeFollowStatus(id, 'POST');
+  },
 
-  followUser: id => APIUtil.changeFollowStatus(id, 'POST'),
+  unfollowUser: id => {
+    debugger;
+    return APIUtil.changeFollowStatus(id, 'DELETE');
+  },
 
-  unfollowUser: id => APIUtil.changeFollowStatus(id, 'DELETE'),
-
-  changeFollowStatus: (id, method) => (
-    $.ajax({
+  changeFollowStatus: (id, method) => {
+    debugger;
+    return $.ajax({
       url: `/users/${id}/follow`,
       dataType: 'json',
-      method
-    })
-  ),
+      method,
+    });
+  },
 
-  searchUsers: query => (
-    $.ajax({
+  searchUsers: query => {
+    return $.ajax({
+      data: { query: query },
       url: '/users/search',
       dataType: 'json',
       method: 'GET',
-      data: { query }
-    })
-  ),
+    });
+  },
 
-  createTweet: data => (
-    $.ajax({
+  createTweet: data => {
+    return $.ajax({
       url: '/tweets',
       method: 'POST',
       dataType: 'json',
-      data
-    })
-  ),
+      data,
+    });
+  },
 
-  fetchTweets: data => (
-    $.ajax({
+  fetchTweets: data => {
+    return $.ajax({
       url: '/feed',
       method: 'GET',
       dataType: 'json',
-      data
-    })
-  )
+      data,
+    });
+  },
 };
 
 module.exports = APIUtil;

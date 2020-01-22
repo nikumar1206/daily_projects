@@ -4,15 +4,10 @@
 
 - RSpec
 - Exceptions
+- Procs/Blocks
 
 ## Discussion
-
-Most students will have finished the projects early today (some very early). Talk about this for a little while - during foundations, if the material clicks for you and your partner, you'll probably have time left at the end of the day. You can spend it in the following ways:
-
-- on old projects: did everything from yesterday and the day before make sense to both of you? Keep working on any projects you didn't finish. Review any material from today or days before that you don't feel rock solid on.
-- on the additional material: we'll send out links to external resources where you can practice the skills you've been building even further. For now, that's extra Ruby problems on HackerRank, which is a website you'll probably encounter on the job search.
-- on the next day's homework: if (and only if) both partners have finished every project in foundations so far, and you've worked through the additional resources or we haven't sent you additional resources for the day, you may get started on the night's homework. Remember never to work on the next day's projects until you're with your partner for that day!
-
+# Rspec
 Reiterate our motivations for test-driven development and draw their attention to particularly interesting problems from today.
 
 - `caesar_cipher` in `rspec_exercise_1_solution/lib/part_2.rb`
@@ -24,3 +19,15 @@ Remind them how they can test individual files and lines:
 - `bundle exec rspec spec/00_part_1_spec.rb`
 - `bundle exec rspec spec/00_part_2_spec.rb:4` tests the whole `describe "palindrome?"` block: ie, every test for the method
 - `bundle exec rspec spec/00_part_2_spec.rb:10` runs just one test in the `palindrome?` method
+
+# Procs 
+Bring up a few choice examples to make sure everyone feels good about block and proc syntax.
+
+- `select_even_nums` in `blocks_project_solution/lib/part_1.rb` uses the syntax `numbers.select(&:even?)`. This was in the reading, but not everyone remembers it.
+- `no_valid_url?` in `blocks_project_solution/lib/part_2.rb` uses `String#end_with?`, which some students may not have found. This can be a good time to remind students of this morning's reading on documentation in pry:
+  - `ls String` lists all methods available to the String class
+  - `show-doc String#end_with?` describes the method and gives examples
+  - `ri String` gives us all the Ruby information on the String class (this will be quite long)
+  - If a student can't run the code, make sure they've installed the `pry-doc` gem as well as the `pry` gem
+- Review the enumerables in `procs_project_solution/lib/part_1.rb`. Make sure everyone understands how the `&prc` parameter procifies the block passed in when the method is invoked in the spec file.
+- Review the later problems in `procs_project_solution/lib/part_2.rb` as examples of methods that must receive Proc objects and not blocks, since we require more than one.

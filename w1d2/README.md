@@ -10,8 +10,8 @@
 # Rspec
 Reiterate our motivations for test-driven development and draw their attention to particularly interesting problems from today.
 
+Go over: 
 - `caesar_cipher` in `rspec_exercise_1_solution/lib/part_2.rb`
-- `palindrome?` and `substrings` (and then `palindrome_substrings` in `rspec_exercise_2_solution/lib/part_2.rb`
 
 Remind them how they can test individual files and lines:
 
@@ -19,6 +19,19 @@ Remind them how they can test individual files and lines:
 - `bundle exec rspec spec/00_part_1_spec.rb`
 - `bundle exec rspec spec/00_part_2_spec.rb:4` tests the whole `describe "palindrome?"` block: ie, every test for the method
 - `bundle exec rspec spec/00_part_2_spec.rb:10` runs just one test in the `palindrome?` method
+
+# Debugging 
+Extol the virtues of debugging and show students how to do it strategically.
+
+- When to `disp` and when to run code just once
+  - How to `undisplay`
+- Optimal locations for debuggers
+- When to use `next`, `step`, or `continue`
+
+Show off the code for some of the more interesting problems from the day in case students have questions on best implementation.
+
+- `uniq_string?` is done with at most one full loop
+- `dupe_indices` uses new hash syntax, and likely far fewer lines of code than some pairs used
 
 # Procs 
 Bring up a few choice examples to make sure everyone feels good about block and proc syntax.

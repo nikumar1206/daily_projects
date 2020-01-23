@@ -15,3 +15,10 @@ Take any questions related to the RSpec exercises
 Take any questions on Perilous Procs. Remind them that like nauseating numbers, some of the later problems are challening and can take a while to solve. 
 
 Students should not feel discouraged if they were unable to reach a solution for some of these problems. Reassure them that if they were able to understand everything in the RSpec exercies, then they are in great shape for the course.
+
+## Elaborative Interrogation 
+- What is the difference between a proc and a block?
+- Why do we want to use procs? 
+- What is the purpose of byebug? 
+- What is the purpose of RSpec? 
+- What approach should you take when you encounter a bug or an error? 

@@ -3,21 +3,12 @@
 ## Core Concepts
 
 - Debugging
-- Pry/byebug
-- Blocks
 
 ## Discussion
 
-Students likely finished the material early today and worked through all the supplementary material. Reiterate the process for finishing early (go over older projects, work on the supplemental material, work on homework) and emphasize that projects get longer in the second week of foundations, and longer still by the third week.
+Students likely did not get very far in nauseating numbers. 
 
-Extol the virtues of debugging and show students how to do it strategically.
+Take questions on anything that the students are curious about but don't spend a lot of time with questions in Phase 3/4 since not everyone got to it. 
 
-- When to `disp` and when to run code just once
-  - How to `undisplay`
-- Optimal locations for debuggers
-- When to use `next`, `step`, or `continue`
+Reassure students that the problems in nauseating numbers are challenging and it's okay if people did not get to it/couldn't solve it. 
 
-Show off the code for some of the more interesting problems from the day in case students have questions on best implementation.
-
-- `uniq_string?` is done with at most one full loop
-- `dupe_indices` uses new hash syntax, and likely far fewer lines of code than some pairs used

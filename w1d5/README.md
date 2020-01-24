@@ -12,9 +12,4 @@ Since Zoom supports at most 50 breakout rooms, students will split into groups d
 
 Students have one hour to finish the test, after which they'll submit via PT and take a short break. We'll all rejoin in the main classroom after and begin the day's assignment.
 
-Go through as much of today's practice assessments as students like. Of particular note:
-
-- `char_replace!` in `assessment_1_solution/lib/part_2.rb` uses a dangerous method. Explain what that is and show how the specs can help us avoid some common mistakes (like returning the right value but not mutating the original, or reassigning the `str` variable inside the method).
-- `my_one?` in `assessment_2_solution/lib/part_1.rb` has a neat one line solution that includes an example 
-- `hash_select` has an example of `prc.call` taking two values instead of one, since our original procified block expects two parameters.
-- `xor_select` takes two Proc objects as arguments, and calls them multiple times.
+Go through as much of today's practice assessments as students like. Also make sure to cover each bullet point on the assessment check-in list. 

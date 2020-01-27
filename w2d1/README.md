@@ -10,6 +10,8 @@
 
 Students may have questions from this morning's assessment. Part of their homework tonight will be submitting a corrected assessment, so defer any questions about specific code answers to their own investigations tonight - focus on OOP today.
 
+Some students can still be confused on `self` - use debuggers to remind students they exist and show off what `self` is at every point. Ask students what `self` refers to whenever we encounter it in the solutions code.
+
 Projects did not include class variables like the homework did, so students may have questions there. We can remind students that the `Dog::whos_louder` example from the notes works just as well in today's project:
 
 ```rb
@@ -50,3 +52,4 @@ Some other useful points:
 - students may still be struggling with the `Hash.new { |h, k| h[k] = [] }` syntax in `bootcamp_solution/lib/bootcamp.rb:8`. We can show it working and show how `Hash.new([])` breaks with `Bootcamp#add_grade`
 - `Bootcamp#average_grade` shows a few examples of outsourcing work to other methods. It also uses `num_grades` and `self.num_grades` to mean the same thing - mention that this is poor style, but evidence of how implicit and explicit `self` work in instance methods
 - `Dog#bark` in `dog_solution/lib/dog.rb` is an example of a more advanced getter method where the output depends on other instance variables
+- `monkey_patching_solution/lib/array.rb` has plenty of `self` keywords sprinkled throughout. `Array#median` and `Array#my_transpose` have enough logic to explore a little while.

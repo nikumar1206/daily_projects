@@ -1,13 +1,13 @@
-# W4D3
+# W4D3
 
-## Core Concepts
+## Core Concepts
 
 - Modules (include/extend)
 - private, public, protected
 
-## Learning Goals
+## Learning Goals
 
-### Chess
+### Chess
 
 - Know when and why private methods are used
 - Be able to read UML and understand the benefits of UML
@@ -15,7 +15,7 @@
 - Know how to use modules
 - Know how class inheritance works
 
-## Discussion
+## Discussion
 
 Take general questions on chess. Feel free to point out the following in particular:
 

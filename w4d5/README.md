@@ -37,3 +37,8 @@ Bring student attention to the Assessment Two Study Guide under W4D1 - all these
 - Talk through the second `largest_contiguous_subsum`. Most people will have called us over for this, but it can't hurt to go over it again.
 - Talk about why `fourth_anagram?` is constant space. Again, most people will already have heard an explanation, but ask them if they want to hear the explanation again.
 - Many people won't have gotten to the max windowed range project. But they could still benefit from getting introduced to stack queues, so talk through that.
+
+# Announcements
+- Make sure that students bring in their own machines for Ruby 2 
+- Come to office hours, its via zoom. No building access over the weekend. 
+- Make sure to study! Use the study guide! 

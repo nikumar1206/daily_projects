@@ -9,6 +9,21 @@
 - Validations
 - Migrations
 
+What is a migration? How does it relate to the schema? 
+
+Why are migrations valuable for project collaboration? 
+
+What are different types of associations and how do they differ?
+
+How does an association relate to the SQL language? 
+
+What is a model? Why do we use models?
+
+Why do we use database and model level validations? 
+
+What is an options hash and why do we use them? 
+
+
 ## Learning Goals
 
 ### Associations Exercise

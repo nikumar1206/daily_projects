@@ -4,6 +4,9 @@
 
 Today was just a study hall, so we won't go over specific questions on the project each student chose. Instead, take questions on the logistics of a03 and answer questions students may have on the practice assessments.
 
+A very important point to highlight is the following:
+Run the setup scripts BEFORE writing any code!!!!! If you write code, and then try to run the scripts, it's possible that the scripts won't correctly run and then you're working with an incorrect database/schema. Students have lost 20+ minutes on assessments in the past because of this, so we really want to stress it. 
+
 Some highlights, if students have no questions:
 
 - `has_one` vs `has_many`: Change `has_one :exchange` in `a03_prep1_solution/assoc-solution/app/models/board.rb` to `has_many :exchange` and watch the specs fail.

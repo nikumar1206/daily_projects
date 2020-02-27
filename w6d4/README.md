@@ -7,7 +7,16 @@
 - JSON API
 - Params methods/hash
 
-## Learning Goals
+## Elaborative Interrogation
+- What are the components of an HTTP request?
+- What is the role of the router in our rails server? 
+- Explain what a route is and how it relates to our controller actions?
+- What is `params` and how is its return value populated? 
+- What are strong params and why do we use them?
+- What is a controller and what is its role in the MVC framework? 
+- What does it mean for HTTP to be stateless and how is that relevant to our rails projects?
+- What is a nested route and what is its role?
+- Why do we use polymorphic associations? (and in answering, explain what a polymorphic association is)
 
 ### Art Share API
 

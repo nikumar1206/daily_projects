@@ -1,5 +1,18 @@
 # W6D3
 
+### Elaborative Interrogation
+1. What are the components of an http request? (Describe each.)
+2. What does the router do? 
+3. What is a route (what are its components)?
+4. What are the 3 ways to send information in a request?
+5. What are the components of an http response?
+6. What is a Controller? What is its job in the MVC framework?
+8. How long does any given Controller instance, and the data that it uses (local variables), persist in memory?
+9. Which controller actions "read" from the database, and which ones "write" to it?
+10. Which controller actions typically need to use strong params, and why?
+11. What are strong params and why do we use them? 
+12. How can we access request information in the controller?
+
 ## Core Concepts
 
 - What is an API

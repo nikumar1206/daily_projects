@@ -36,10 +36,6 @@ Q: Why is it important?
 + Table column types of boolean (know default values; see: https://thoughtbot.com/blog/avoid-the-threestate-boolean-problem)
 + Handle nested `new` or nested `create` or neither nested (see https://github.com/appacademy/cohort-resources/blob/master/study_guides/rails/nested_routes.md)
 
-### Things that are good to know, but won't show up
-+ Dropdowns
-+ Radio buttons
-
 ### Study Tips
 
 Good resource on this: https://github.com/appacademy/cohort-resources/blob/master/assessment_tips/a04/assessment4_notes.md

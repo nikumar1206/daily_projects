@@ -10,7 +10,7 @@
 * Know how to create event listeners using vanilla JavaScript
 
 # Circle time: 
-- First in person circle time! Ask them the usual circle time questions: 
+- Ask them the usual circle time questions: 
     - What's your greatest achievement of the week?
     - What was your biggest struggle this week?
 - Talk about next week and get them motivated:

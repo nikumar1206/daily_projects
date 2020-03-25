@@ -10,7 +10,8 @@ class Board extends React.Component{
 
   render() {
     const board = this.props.board;
-    const that = this;
+    const that = this; // for debugging purposes, allows us to check the ctx
+    // this; // alternative to above line
     return(
       <div id="board">
         {this.renderRows()}

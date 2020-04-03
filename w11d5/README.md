@@ -1,7 +1,7 @@
 # W11D5
 
 - The last Circle Time is here! 
-- Talk about React-1 Assessment/A06, full-stacks, and any questions on BenchBnB
+- Talk about React-1 Assessment/A06, full-stacks, and any questions on [BenchBnB](w11d4/))
 
 ## Announcements
 

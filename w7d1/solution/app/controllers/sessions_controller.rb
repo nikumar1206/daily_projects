@@ -2,6 +2,7 @@ class SessionsController < ApplicationController
   before_action :require_no_user!, only: %i(create new)
 
   def create
+    debugger
     user = User.find_by_credentials(
       params[:user][:username],
       params[:user][:password]
@@ -17,11 +18,13 @@ class SessionsController < ApplicationController
   end
 
   def destroy
+    debugger
     logout_user!
     redirect_to new_session_url
   end
 
   def new
+    debugger
     render :new
   end
 end

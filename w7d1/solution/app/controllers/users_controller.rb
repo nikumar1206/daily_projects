@@ -2,6 +2,7 @@ class UsersController < ApplicationController
   before_action :require_no_user!
 
   def create
+    debugger
     @user = User.new(user_params)
     if @user.save
       login_user!(@user)
@@ -13,6 +14,7 @@ class UsersController < ApplicationController
   end
 
   def new
+    debugger
     @user = User.new
     render :new
   end
@@ -20,6 +22,7 @@ class UsersController < ApplicationController
   private
   
   def user_params
+    debugger
     params.require(:user).permit(:password, :username)
   end
 end

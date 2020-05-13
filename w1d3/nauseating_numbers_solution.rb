@@ -214,6 +214,49 @@ end
 #     [4, 2, 9, 7],
 # ]) # false
 
+
+
+def squaragonal?(grid)
+    size = grid.length - 1
+    diag_one = []
+    (0..size).each { |idx| diag_one.push(grid[idx][idx]) }
+    return true if diag_one.uniq.length == 1
+    
+    diag_two = []
+    (0..size).each { |idx| diag_two.push(grid[idx][size - idx]) }
+    return true if diag_two.uniq.length == 1
+
+    false
+end
+
+# p squaragonal?([
+#     [:x, :y, :o],
+#     [:x, :x, :x],
+#     [:o, :o, :x],
+# ]) # true
+
+# p squaragonal?([
+#     [:x, :y, :o],
+#     [:x, :o, :x],
+#     [:o, :o, :x],
+# ]) # true
+
+# p squaragonal?([
+#     [1, 2, 2, 7],
+#     [1, 1, 6, 7],
+#     [0, 5, 1, 7],
+#     [4, 2, 9, 1],
+# ]) # true
+
+# p squaragonal?([
+#     [1, 2, 2, 5],
+#     [1, 6, 5, 0],
+#     [0, 2, 2, 7],
+#     [5, 2, 9, 7],
+# ]) # false
+
+
+
 def adjacent_sums(arr)
     sums = []
     (0...arr.length-1).each do |i|
@@ -323,14 +366,14 @@ def consecutive_collapse(numbers)
     numbers
 end
 
-# p consecutive_collapse([3, 4, 1])                     # [1]
-# p consecutive_collapse([1, 4, 3, 7])                  # [1, 7]
-# p consecutive_collapse([9, 8, 2])                     # [2]
-# p consecutive_collapse([9, 8, 4, 5, 6])               # [6]
-# p consecutive_collapse([1, 9, 8, 6, 4, 5, 7, 9, 2])   # [1, 9, 2]
-# p consecutive_collapse([3, 5, 6, 2, 1])               # [1]
-# p consecutive_collapse([5, 7, 9, 9])                  # [5, 7, 9, 9]
-# p consecutive_collapse([13, 11, 12, 12])              # []
+p consecutive_collapse([3, 4, 1])                     # [1]
+p consecutive_collapse([1, 4, 3, 7])                  # [1, 7]
+p consecutive_collapse([9, 8, 2])                     # [2]
+p consecutive_collapse([9, 8, 4, 5, 6])               # [6]
+p consecutive_collapse([1, 9, 8, 6, 4, 5, 7, 9, 2])   # [1, 9, 2]
+p consecutive_collapse([3, 5, 6, 2, 1])               # [1]
+p consecutive_collapse([5, 7, 9, 9])                  # [5, 7, 9, 9]
+p consecutive_collapse([13, 11, 12, 12])              # []
 
 
 def next_prime(number, i)

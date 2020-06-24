@@ -9,7 +9,7 @@
 
 ## Discussion
 
-You probably won't spend a lot of flex time today talking about Capybara; most will be towards A04 prep. 
+You probably won't spend a lot of flex time today talking about Capybara; most will be towards Rails 2 prep. 
 
 There are a couple questions that you should pose to the circle: 
 
@@ -25,7 +25,7 @@ Q: What is Capybara?
 Q: Why is it important?
 + End-to-end testing is an important part of testing your app. It's time-consuming to manually verify that each path a user might take in your app is verified to work; Capybara can help you automate this. 
 
-## A04 Prep
+## Rails 2 Prep
 
 ### Things to know, and can or will show up (note: not exhaustive list)
 + Auth from scratch! 
@@ -38,11 +38,11 @@ Q: Why is it important?
 
 ### Study Tips
 
-Good resource on this: https://github.com/appacademy/cohort-resources/blob/master/assessment_tips/a04/assessment4_notes.md
+Good resource on this: https://github.com/appacademy/cohort-resources/blob/master/assessment_tips/rails_2/rails_assessment_2_notes.md
 
 * Take the practice at least 8 times, preferrably 10. If you are unsure, do 10. You'll have 2 hours for this, and by having this repetition in place, you will get used all the steps involved in creating a rails app with auth. 
   * It takes some time to get used to various bugs you will encounter, as well as getting the rails workflow really down. It is **critical** that you get many reps in for this assessment.
-  * Always take A04 in it's entirety. Don't take breaks or stop after a certain point. We want to get used to being able to do the entire test in one sitting.
+  * Always take Rails 2 in it's entirety. Don't take breaks or stop after a certain point. We want to get used to being able to do the entire test in one sitting.
   * As a warning, the first time may take a while (potentially much longer than the allotted 2 hours)! It _will_ get faster as you get more familiar with the process. 
   
 * Keep a bug journal! If you encounter a bug, write down where you are (aka are you in the user model writing user auth?) and what the error message is. When you solve it, write down the issue and how it was fixed.
@@ -50,7 +50,7 @@ Good resource on this: https://github.com/appacademy/cohort-resources/blob/maste
 # Additional Topics 
 
   - Like we say for every assessment, you should strive for understanding. Really ask yourself why we're doing every piece of the auth pattern.
-  - You may be inclined to try to memorize the whole pattern but we do not recommend that. You can use some mnemonic devices to help you remember what methods you need for the User model for example (FGRIPE). You should still understand why you need each method, but memorizing the names might be helpful.
+  - You may be inclined to try to memorize the whole pattern but we do not recommend that. You can use some mnemonic devices to help you remember what methods you need for the User model for example (FGRIPE/FIG VAPER). You should still understand why you need each method, but memorizing the names might be helpful.
   - The test is more than just the auth pattern! Make sure you are comfortable with views and controllers and models and how they all work together at a high level.
-  - Make sure to understand how Capybara finds elements on the page. In `a04p_solution/app/views/sessions/new.html.erb`, if we make the label `username` (lower case) or if we remove the `for` from the label, Capybara won't be able to find the input.
+  - Make sure to understand how Capybara finds elements on the page. In `rails_2_practice_solution/app/views/sessions/new.html.erb`, if we make the label `username` (lower case) or if we remove the `for` from the label, Capybara won't be able to find the input.
   - There will be an optional assessment walkthrough on Monday in two parts, first during study hall and then over lunch.

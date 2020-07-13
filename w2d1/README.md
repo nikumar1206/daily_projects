@@ -12,7 +12,7 @@ Students may have questions from this morning's assessment. Part of their homewo
 
 Some students can still be confused on `self` - use debuggers to remind students they exist and show off what `self` is at every point. Ask students what `self` refers to whenever we encounter it in the solutions code.
 
-Projects did not include class variables like the homework did, so students may have questions there. We can remind students that the `Dog::whos_louder` example from the notes works just as well in today's project:
+Projects did not include class methods like the homework did, so students may have questions there. We can remind students that the `Dog::whos_louder` example from the notes works just as well in today's project:
 
 ```rb
 class Dog

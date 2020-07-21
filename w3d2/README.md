@@ -25,6 +25,10 @@
 
 ## Discussion
 
+- Let's talk about HTML.
+- Give general overview: what is HTML, the head vs the body, what is an element, what does it mean to be a child/parent, what are different types of elements. Take questions. 
+
+
 - Students may have had some trouble visualizing what the board should look like. Show, and justify, how we set it up with `Board#populate` and `Board#render`. Emphasize that `populate` is being called implicitly on `self` in `Board#initialize` because `self` in `initialize` methods always refers to the instance of the class being created.
 - Draw attention to the `memory/board.rb:12-20`. They've seen the `[]`/`[]=` methods plenty by now, but it's worth reinforcing while we see it.
 - Explain private `attr_reader` in `memory/board.rb:65`: we haven't had a unit on privacy yet, but why wouldn't we want this to be public? Why wouldn't we want a writer method?

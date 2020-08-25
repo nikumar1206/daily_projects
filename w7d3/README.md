@@ -42,8 +42,9 @@ Good resource on this: https://github.com/appacademy/cohort-resources/blob/maste
 
 * Take the practice at least 8 times, preferrably 10. If you are unsure, do 10. You'll have 2 hours for this, and by having this repetition in place, you will get used all the steps involved in creating a rails app with auth. 
   * It takes some time to get used to various bugs you will encounter, as well as getting the rails workflow really down. It is **critical** that you get many reps in for this assessment.
-  * Always take Rails 2 in it's entirety. Don't take breaks or stop after a certain point. We want to get used to being able to do the entire test in one sitting.
+  * Take Rails 2 in it's entirety at first. Don't take breaks or stop after a certain point. We want to get used to being able to do the entire test in one sitting.
   * As a warning, the first time may take a while (potentially much longer than the allotted 2 hours)! It _will_ get faster as you get more familiar with the process. 
+  * Later on, save a version completed through the controllers to practice the Views more on their own.
   
 * Keep a bug journal! If you encounter a bug, write down where you are (aka are you in the user model writing user auth?) and what the error message is. When you solve it, write down the issue and how it was fixed.
 

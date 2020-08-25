@@ -40,13 +40,15 @@ end
 def largest_contiguous_subsum1(array)
   subs = []
 
-  array.each_index do |idx1|
-    (idx1..array.length - 1).each do |idx2|
-      subs << array[idx1..idx2]
+  array.each_index do |idx1| # n elements
+    (idx1..array.length - 1).each do |idx2| # avg n/2 elements
+      subs << array[idx1..idx2] # avg n/2 elements
     end
   end
 
-  subs.map { |sub| sub.inject(:+) }.max
+  subs.map do |sub| # subs has exactly n^2/2 elements
+    sub.inject(:+) # avg length of n/2
+  end.max # parallel linear operation
 end
 
 #O(n) linear time

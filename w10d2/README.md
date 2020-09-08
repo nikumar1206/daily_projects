@@ -1,7 +1,10 @@
 **Flex time** (5:20)
 
 **Today's learning goals**:
-
+* Know how to set up a new React project
+* Be able to create simple React components
+* Know how to incorporate an API into your app
+* Be able to add basic styling to React components
 **Widgets**:
 
 ### Elaborative Interrogations: 
@@ -13,11 +16,8 @@
 - What is the context in different places—inside the constructor, inside of the render, inside of the onClick callback? 
 - What is a components lifecycle? Name a lifecycle method? Why do we use them?
 
-* Know how to set up a new React project
-* Be able to create simple React components
-* Know how to incorporate an API into your app
-* Be able to add basic styling to React components
 
+### Additional things 
 - Go through how tabs work.
   - There are a bunch of debuggers. Explain the order in which we hit the debuggers, both when we load up the app and when we switch tabs.
   - There's a debugger before we set state, one after, and one as a callback to `setState`. Explain to them that `setState` is async and that the callback gets invoked after the state has been set and the component has re-rendered.

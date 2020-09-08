@@ -4,6 +4,15 @@
 
 **Widgets**:
 
+### Elaborative Interrogations: 
+- What is the difference between a functional and a classical component? 
+- What causes a component re-render? 
+- Where do props come from? 
+- What is internal state? When might you use it?
+- What is the difference between export default and export const? What do their imports look like? When might you use them? 
+- What is the context in different places—inside the constructor, inside of the render, inside of the onClick callback? 
+- What is a components lifecycle? Name a lifecycle method? Why do we use them?
+
 * Know how to set up a new React project
 * Be able to create simple React components
 * Know how to incorporate an API into your app

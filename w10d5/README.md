@@ -11,4 +11,4 @@
   - Come to office hours (12-4 on Saturday)
 
 - After doling out this advice, spend remaining time taking general questions on react, redux, thunk, etc.
-- End at 5:13 to re-join the main room for full-stack lecture
+- End at 5:17 to re-join the main room for full-stack lecture

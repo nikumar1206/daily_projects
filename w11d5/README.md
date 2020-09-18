@@ -6,6 +6,8 @@
 ## Announcements
 
 - React-1 assessment/A06 is basically a condensed version of working through a feature of your full stack (minus styling) so studying will be some of the best preparation you can do!
+
+- If you do not get a perfect score on the assessment on Monday, you'll need to complete corrections before beginning your full stack. 
   
 - Go through the practice assessment at least 4 times over the weekend
 

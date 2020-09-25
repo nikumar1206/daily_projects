@@ -16,6 +16,7 @@
   - Google/Stack Overflow (make sure to read through a few resources before trying to implement something) 
   - Your debugging skills! (check the console, the server log, your webpack output! use debuggers! read your error messages!)
 - If any of your students are planning on setting up AWS this weekend, emphasize that they should be EXTREMELY precise while following the instructions.
+- Start keeping a list of big bugs and cool solutions that came up with. This will be invaluable when they start interviewing and want technical anecdotes. 
 
 
 **FULL STACK PROJECT**
@@ -25,7 +26,6 @@
 - What are you most proud of so far on your project?
 - What feature are you most excited to implement the coming week?
 
-* Start keeping a list of big bugs and cool solutions that came up with. This will be invaluable when they start interviewing and want technical anecdotes. 
 
 **BIGGER PICTURE**
 

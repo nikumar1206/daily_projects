@@ -15,18 +15,25 @@
 	border-bottom: none;
 	border-top-left-radius: 3px;
 	border-top-right-radius: 3px;
-}
 
-.language-nav a {
-	margin: 0 5px;
-	text-transform: uppercase;
-	font-family: $sans-serif;
-	font-size: 10px;
-	color: $dark-gray;
-}
+	a {
+		margin: 0 5px;
+		text-transform: uppercase;
+		font-family: $sans-serif;
+		font-size: 10px;
+		color: $dark-gray;
+	}
 
-.language-nav ul {
-	display: flex;
+	ul {
+		display: flex;
+	}
+
+	li:first-of-type {
+		
+		a {
+			font-weight: bold;
+		}
+	}
 }
 
 .logo {
@@ -40,43 +47,39 @@
 	font-size: 11px;
 	margin-top: 10px;
 	margin-bottom: 10px;
-}
 
-.masthead-links li {
-	margin-left: 10px;
-	border-right: 1px solid $light-gray;
-}
+	li {
+		margin-left: 10px;
+		border-right: 1px solid $light-gray;
+	}
 
-.masthead-links button {
-	background: none;
-	padding: 0px;
-	color: #000;
-	font-weight: normal;
-	border: none;
-}
+	button {
+		background: none;
+		padding: 0px;
+		color: #000;
+		font-weight: normal;
+		border: none;
+	}
 
-.masthead-links button:hover {
-	background-color: $lightest-gray;
-}
+	button:hover {
+		background-color: $lightest-gray;
+	}
 
-.masthead-links a,
-.masthead-links button, 
-.masthead-links time {
-	margin-right: 10px;
-}
+	a,
+	button, 
+	time {
+		margin-right: 10px;
+	}
 
-.masthead-links i {
-	margin-right: 5px;
-}
+	i {
+		margin-right: 5px;
+	}
 
-.masthead-links strong {
-	color: green;
-}
+	strong {
+		color: green;
+	}
 
-.masthead-links li:last-child {
-	border: none;
-}
-
-.language-nav li:first-of-type a {
-	font-weight: bold;
+	li:last-child {
+		border: none;
+	}
 }

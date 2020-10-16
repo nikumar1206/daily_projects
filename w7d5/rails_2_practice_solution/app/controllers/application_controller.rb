@@ -3,26 +3,12 @@ class ApplicationController < ActionController::Base
   # Expose these methods to the views
   helper_method :current_user, :signed_in?
 
-  # most of these methods are to help make our code DRY
-  # they are optional but help 
-
   private
-  
-  # getter method for @current_user
   def current_user
-    # we save a query by doing this logic 
     @current_user ||= User.find_by(session_token: session[:session_token])
   end
 
   def signed_in?
-    # current_user can be either truthy or falsey 
-    # we want a boolean, true or false 
-
-    # if current_user
-    #   return true 
-    # end
-    # false 
-
     !!current_user
   end
 

@@ -8,9 +8,6 @@ class GoalsController < ApplicationController
 
         if @goal.save
         else
-            # flash persists for two HTTP cycles, use often with redirect
-            # flash.now persists only for the current HTTP cycle, use often with render
-
             flash[:errors] = @goal.errors.full_messages
         end
         #  we are redirecting to the same url no matter what

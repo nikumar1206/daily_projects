@@ -1,7 +1,6 @@
 class SessionsController < ApplicationController
 
-  # before running destroy action, we will invoke `require_signed_in!`
-  before_action :require_signed_in!, only: [:destroy]
+   before_action :require_signed_in!, only: [:destroy]
 
   def new
     render :new

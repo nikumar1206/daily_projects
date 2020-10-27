@@ -7,6 +7,20 @@
 - Procs/Blocks
 
 ## Discussion
+### Reminders 
+1. Do not worry about finishing the days projects, make sure that you understand every line of code you write! 
+2. These first two weeks are not just about coding foundations - they are also about foundations for the course. Make sure you are using this time to set a schedule that allows you time to eat and sleep and that you are cementing good study habits. 
+3. Do not forget your nightly pair reports 
+
+### Elaborative Interrogation: 
+- What are some ways that you can debug something when you get stuck? 
+  - Run the specs if you have them (read the more detailed failure messages, not just the top information) 
+  - Use pry to test specific methods 
+  - Use debuggers (don't forget to require byebug at the top of the file!) 
+  - Use print statements (particularly useful in loops with lots of iteration - think bubble sort - or recursion - which we will learn later) 
+  - Comment out large chunks of code to narrow down where the error is coming from 
+  - Google - google methods, specific error messages, or weird behavior
+
 # Rspec
 Reiterate our motivations for test-driven development and draw their attention to particularly interesting problems from today.
 

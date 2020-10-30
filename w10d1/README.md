@@ -1,13 +1,13 @@
-# W9D5 
+# W10D1 
 **Today's learning goals**:
 
-**Pocket Projects**:
+**jQuery Lite**:
+
 * Know how to traverse and manipulate the DOM using vanilla JavaScript
-* Practice using event listeners using vanilla JavaScript
-* Learn to Implement extra Functionality using vanilla JavaScript
+* Be able to create a class to serve as a wrapper for DOM nodes / HTML elements
 * Understand an HTML page as a tree of DOM nodes
-* Understand Event Bubbling and Delegation
-* Learn How Debouncing Works
+* Get familiar with some of the properties that HTML elements have
+* Know how to create event listeners using vanilla JavaScript
 
 **Mail**:
 * Understand the basics of how to make a single-page application
@@ -23,20 +23,10 @@
 - end of JS module, take questions on the day's project
 
 # Discussion Topics: 
-- Why we put the `mouseenter` and `mouseleave` event listeners on the `<nav>` rather than the `<li>`
-  
-- querySelector/getElementById vs. querySelectorAll/getElementsByClassName
-  + the first two return a single element (the first that matches the selection criteria, if there are multiple); the second two return an HTMLCollection
-  
-- Illustrate the difference between debouncing and throttling
-  + https://css-tricks.com/debouncing-throttling-explained-examples/
-  + https://javascript.info/task/debounce
-  + https://javascript.info/task/throttle
-  + https://redd.one/blog/debounce-vs-throttle (neat visual examples with concise explanations)
-  + TLDR: if we spam an event, debounce will not invoke the function until we stop, whereas throttle will invoke it each time the cooldown time elapses
 
-- Explain that the pre-written import statement in `index.js` does not match the syntax of the corresponding export
-  + we export a named constant from `warmup.js`, so we should write `import "./warmup"` if we want to import the scope from that file rather than individual named exports using object destructuring 
+- Go over `$l.ajax` and compare it with `$.ajax`: The $l one doesn't return a promise.
+- Go over `DomNodeCollection.prototype.on`: We have to store callbacks somewhere because `removeEventListener` needs the callback.
+- Go over the logic for document ready callback.
 
 - Tomorrow is the first day of React!
   + stay focused and motivated, it's both the most difficult and the most rewarding module

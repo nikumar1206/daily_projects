@@ -37,3 +37,9 @@ Take general questions on chess. Feel free to point out the following
 - `next false` in `Pawn#side attacks`. Cool syntax to return `false` directly to the block in that iteration.
 - `@notifications` in Display class. Nice to handle all display things in the Display class. All errors get bubbled up to Game class, which sets errors in its Display.
 
+## Assessment Prep
+- Study guide for Ruby 2 can be found in W4D1 on App Academy Open. Additionally, the practice assessment itself, along with walkthrough videos, can be found under W5D1. 
+- Make sure students know about the README (especially important with this test as that is how they access the hackerrank section) 
+- Encourage students to make a first practice run tonight.
+- Take any questions on material on assessment and format of the assessment. 
+

@@ -1,6 +1,10 @@
-let readline = require("readline");
-let Piece = require("./piece.js");
-let Board = require("./board.js");
+// DON'T TOUCH THIS CODE
+if (typeof window === 'undefined'){
+  var readline = require("readline");
+  var Piece = require("./piece.js");
+  var Board = require("./board.js");
+}
+// DON'T TOUCH THIS CODE
 
 /**
  * Sets up the game with a board and the first player to play a turn.
@@ -77,4 +81,9 @@ Game.prototype.runLoop = function (overCallback) {
   }
 };
 
-module.exports = Game;
+// DON'T TOUCH THIS CODE
+if (typeof window === 'undefined'){
+  module.exports = Game;
+}
+// DON'T TOUCH THIS CODE
+

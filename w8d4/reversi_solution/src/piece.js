@@ -27,4 +27,8 @@ Piece.prototype.toString = function () {
   return (this.color === "black") ? "B" : "W";
 };
 
-module.exports = Piece;
+// DON'T TOUCH THIS CODE
+if (typeof window === 'undefined'){
+  module.exports = Piece;
+}
+// DON'T TOUCH THIS CODE

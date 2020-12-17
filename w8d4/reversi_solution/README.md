@@ -1,5 +1,6 @@
 # REVERSI JS STYLE
 
-To play the game, run: `npm start`.
+To run tests, open `SpecRunner.html` in a chrome tab.
 
-To run the tests, run: `npm test`.
+To play the game, run `node run_game.js` in your console.
+

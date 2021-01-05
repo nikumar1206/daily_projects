@@ -8,7 +8,7 @@
 **Widgets**:
 
 ### Elaborative Interrogations: 
-- What is the difference between a functional and a classical component? 
+- What is the difference between a functional and a class component? 
 - What causes a component re-render? 
 - Where do props come from? 
 - What is internal state? When might you use it?

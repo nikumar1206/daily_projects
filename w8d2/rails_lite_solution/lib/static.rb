@@ -48,7 +48,7 @@ class FileServer
       res.status = 404
       res.write("File not found")
     end
-    res
+    [res.status, res.headers, res.body]
   end
 
   private

@@ -18,7 +18,19 @@ Students should not feel discouraged if they were unable to reach a solution for
 
 ## Elaborative Interrogation 
 - What is the difference between a proc and a block?
+    - A proc is a block saved into a variable aka an object that contains a block.
+    - A block is a chunk of code that is passed into a method to be executed
+
 - Why do we want to use procs? 
+    - A proc is an object that contains a block. We need procs because they allow us to save blocks to variables so we can manipulate them in our code.
+
 - What is the purpose of byebug? 
+    - It allows us to pause execution of our code and look at variables at different points in execution
+
 - What is the purpose of RSpec? 
+    - It helps us to test our code!
+
 - What approach should you take when you encounter a bug or an error? 
+    - Read the error message, look at the line number
+    - Put in a debugger
+    - User print statements

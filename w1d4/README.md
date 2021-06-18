@@ -14,7 +14,7 @@ Take any questions related to the RSpec exercises
 
 Take any questions on Perilous Procs. Remind them that like nauseating numbers, some of the later problems are challening and can take a while to solve. 
 
-Students should not feel discouraged if they were unable to reach a solution for some of these problems. Reassure them that if they were able to understand everything in the RSpec exercies, then they are in great shape for the course.
+Students should not feel discouraged if they were unable to reach a solution for some of these problems. Reassure them that if they were able to understand everything in the RSpec exercises, then they are in great shape for the course.
 
 ## Elaborative Interrogation 
 - What is the difference between a proc and a block?
@@ -25,12 +25,15 @@ Students should not feel discouraged if they were unable to reach a solution for
     - A proc is an object that contains a block. We need procs because they allow us to save blocks to variables so we can manipulate them in our code.
 
 - What is the purpose of byebug? 
-    - It allows us to pause execution of our code and look at variables at different points in execution
+    - It allows us to pause execution of our code and look at and track variables and expressions at different points in execution.
 
 - What is the purpose of RSpec? 
+    - It helps us understand what a method is supposed to do.
     - It helps us to test our code!
 
 - What approach should you take when you encounter a bug or an error? 
     - Read the error message, look at the line number
-    - Put in a debugger
+    - Put in a debugger, use byebug
     - User print statements
+    - Look at documetation
+    - Google 

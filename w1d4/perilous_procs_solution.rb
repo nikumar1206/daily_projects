@@ -142,7 +142,7 @@ def filter_out!(array, &prc)
     array.uniq.each { |el| array.delete(el) if prc.call(el) }
 end
 
-# arr_1 = [10, 6, 3, 2, 5 ]
+# arr_1 = [10, 6, 3, 2, 5 ]   
 # filter_out!(arr_1) { |x| x.odd? }
 # p arr_1     # [10, 6, 2]
 

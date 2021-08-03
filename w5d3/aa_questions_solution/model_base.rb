@@ -29,7 +29,13 @@ class ModelBase
         #{table}
     SQL
 
-    parse_all(data)
+    puts data
+
+    data.map { |hash| Question.new(hash) }
+  end
+
+  def self.parse_all(data)
+    data.map { |hash| Question.new(hash) }
   end
 
   def self.where(params)
@@ -119,7 +125,5 @@ class ModelBase
     self
   end
 
-  def self.parse_all(data)
-    data.map { |attrs| self.new(attrs) }
-  end
+
 end

@@ -53,17 +53,27 @@ end
 
 #O(n) linear time
 #O(1) constant space
+
+require "byebug"
 def largest_contiguous_subsum2(arr)
   largest = arr.first
   current = arr.first
+  
 
-  return arr.max if arr.all? { |num| num < 0 }
+  # return arr.max if arr.all? { |num| num < 0 }
+  debugger
 
   arr.drop(1).each do |num|
+    debugger
     current = 0 if current < 0
+    debugger
     current += num
+    debugger
     largest = current if current > largest
+    debugger
   end
 
   largest
 end
+
+largest_contiguous_subsum2([-5, -6, -7, -8])

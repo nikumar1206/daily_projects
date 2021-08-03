@@ -1,36 +1,41 @@
-# Week 7, Day 5
+# Week 7, Day 5 
 
-## Learning Goals
-- Be able to reason about styling approaches from screenshots of a design
-- Be able to layout elements in a custom Grid system
-- Know how to create interactive elements such as sidebars and dropdowns
-- Understand media queries and responsive design
-- Know how to use an icon font system
-- Know how to organize stylesheets in a Rails Application
+**Today's learning goals**:
 
-## CSS Review
+- Be able to write auth from scratch without looking at previous solutions
+- Know how to use a `before_action` to manage user access to resources
+- Be able to write Rails models, controllers, and views quickly
+- Know when to use regular associations and when to use join tables
+- Know how to avoid N+1 queries
 
-Take general questions on AA_Times. 
+**Discuss:**
 
-No need to spend too much time here since they should have asked plenty of questions during the two days. 
+- If you feel like you have some folks in your circle that really need to go
+  back to basics, review the routes.
 
-Consider reviewing these topics:
-- The Box Model: Padding, border, margin
-- Different `display` properties. Specifically block, inline, inline-block and flex. 
-- Talk about the `position` property, specifically `relative` vs `absolute`.
+  - Why do we only need certain routes (i.e. new) nested?
+  - Are we able to nest certain routes, and unnest others?
+  - Can we have multiple routes go to the same action?
 
-Some of them will still hate CSS after today. Tell them that styling is important: recruiters are more likely to take a closer look at their full-stack projects if they look good.
+- Review more advanced forms, specifically checkboxes:
 
-## Rails 2 Prep
+  - In `app/views/posts/_form.html.erb`, show them the hidden input and the
+    `input type="checkbox"` and talk about how they interact with
 
-- Take any questions on Rails 2 practice assessment. 
-- Remind them about the walkthrough on Monday and encourage them to write down questions over the weekend so they can come prepared to that.
-- Come to office hours (zoom) tomorrow, ostensibly 12-4 
-- Save a version completed through Controllers to get in more Views reps
-- One tip (that will help mitigate a small bug in the practice assessment) is that they do NOT need to write an database validations in their migrations. Talking about the bug itself will likely lead to confusion, so simply present it as a time-saving strategy. 
-- You can make all methods public for the purpose of the test.
-- (If they bring it up) Don't use generators beyond `rails g controller`
-- Show off boolean validation in goal model 
-- Show off BADuri errors (ex. `<form action=" <%= users_url %> " method="POST" >` )
-- If there aren't enough questions to fill time, quiz them on general rails/auth concepts (what is an MVC framework? how do we use session tokens to determine the current user? what is csrf and how do we prevent it? etc etc). 
-- Go over general test taking advice again and encourage them to come to office hours! 
+    - the `sub_ids: []` in the `post_params` in the `PostController`
+    - and the `has_many :post_subs, inverse_of: :post` in the `Post` model to
+      allow us to post a post to multiple subs.
+
+  - For the empty hidden input, is it okay that it has a value of an empty
+    string?
+    - Yes, rails ignores this and treats it as an empty array.
+
+- Nested comments (only if significant number of students reach this part). Look
+  at:
+  - `app/views/comments/_comment.html.erb`
+  - `comments_by_parent` method in `Post` model
+- Polymorphic associations (only if a significant number of students reach
+  votable). Look at:
+  - `db/migrate/20170703203953_create_user_votes.rb`
+  - `app/models/concerns/votable.rb`
+  - Vote method in `CommentsController`

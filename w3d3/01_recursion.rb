@@ -77,6 +77,17 @@ class Array
   end
 end
 
+def subsets2(arr)
+    return [[]] if arr.empty? 
+    smaller_set = arr[0...-1] #drop the last element 
+    subs = subsets2(smaller_set) #breaking it down into pieces 
+    new_subs = [] 
+    subs.each do |sub| #return of smaller_set
+      new_subs << sub + [arr.last]
+    end
+    subs + new_subs #adding everything together 
+end
+
 def permutations(array)
   return [array] if array.length <= 1
 

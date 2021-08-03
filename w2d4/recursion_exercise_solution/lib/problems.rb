@@ -61,6 +61,27 @@ def sum_array(array)
     first + sum_array(rest)
 end
 
+#recursive steps for [5, 2]
+#sum_array([5,2])
+
+#FIRST CALL
+#first = 5
+#rest = [2]
+#return 5 + 2 ---> 7
+            
+            #SECOND CALL
+            #first = 2
+            #rest = []
+            #return 2 + 0 
+
+                        #THIRD CALL
+                        #return 0
+                        
+
+##BASE CASE - this is when we start returning
+##RECURSIVE STEP - 
+
+
 
 # Write a method, reverse_string(str), that takes in a string.
 # The method should return the string with it's characters in reverse order.
@@ -113,4 +134,36 @@ def flatten(data)
     flattened = []
     data.each { |el| flattened += flatten(el) } 
     flattened
+end
+
+
+require "byebug"
+def flatten2(data, level = 1)
+    debugger
+
+    return [data] unless data.is_a?(Array)
+
+    flattened = []
+    data.each do |el| 
+        debugger
+
+        flattened_el = flatten2(el, level + 1)
+        debugger
+
+        flattened += flattened_el
+        debugger
+    end
+
+    debugger
+
+    flattened
+end
+
+array_1 = [1, 2, [[3, 4], [5, [6]]], [7, 8]]
+flatten2(array_1)      # => [ 1, 2, 3, 4, 5, 6, 7, 8 ]
+
+def flatten(data)
+    return [data] unless data.is_a? Array
+    return data if data.empty?
+    flatten(data[0]) + flatten(data[1..-1])
 end

@@ -57,7 +57,7 @@ RSpec.describe GoalsController, type: :controller do
       before do
         allow(controller).to receive(:current_user) { jasmine }
       end
-
+      
       it 'removes the goal and redirects back to the user index' do
         delete :destroy, params: { id: jasmine_goal.id }
         expect(response).to redirect_to(users_url)

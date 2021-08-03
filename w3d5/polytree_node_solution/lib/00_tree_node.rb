@@ -3,7 +3,7 @@ module Searchable
   # TreeNode class (e.g., BinaryTreeNode). All I need is `#children` and
   # `#value` for `Searchable` to work.
 
-  def dfs(target = nil, &prc)
+  def dfs(target = nil, &prc) 
     raise "Need a proc or target" if [target, prc].none?
     prc ||= Proc.new { |node| node.value == target }
 
@@ -16,6 +16,11 @@ module Searchable
 
     nil
   end
+
+#   1
+#  2  4
+# 3
+
 
   def bfs(target = nil, &prc)
     raise "Need a proc or target" if [target, prc].none?

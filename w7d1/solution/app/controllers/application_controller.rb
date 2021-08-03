@@ -5,10 +5,14 @@ class ApplicationController < ActionController::Base
   helper_method :current_user
   helper_method :logged_in?
 
-  private
+  
   def require_no_user!
-    debugger
     redirect_to cats_url if current_user
+  end
+
+  def require_user!
+    debugger
+    redirect_to new_session_url if current_user.nil?
   end
 
   def current_user
@@ -33,8 +37,5 @@ class ApplicationController < ActionController::Base
     session[:session_token] = nil
   end
 
-  def require_user!
-    debugger
-    redirect_to new_session_url if current_user.nil?
-  end
+
 end

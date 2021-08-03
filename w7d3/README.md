@@ -22,19 +22,24 @@ Q: Why do we test our code?
 Q: What is Capybara?
 + Capybara is a Ruby library for end-to-end testing, which allows us to test things like UI interactions by simiulating these things (ex: "When a user clicks on a link to the 'Log In' form, do they see the correct form with the right input fields" or "When a user fills out the Log In form with correct credentials, does it redirect them to the cats index page?").
 
-Q: Why is it important?
+Q: Why is Capybara important?
 + End-to-end testing is an important part of testing your app. It's time-consuming to manually verify that each path a user might take in your app is verified to work; Capybara can help you automate this. 
 
 ## Rails 2 Prep
 
 ### Things to know, and can or will show up (note: not exhaustive list)
++Practice assessment is W8D1, study guide is W7D2
++FIGVAPER/CELLL
++Watch the walkthru videos, only after they've run thru the assessment 
+
 + Auth from scratch! 
-+ Know about input types, ex:`input type="text"`
++ Know about input types, ex:`input type="text"` type="password"
 + Know the importance of using html tags, specifically `label`, `textarea`, and `input`
-+ Rendering errors in your views
++ Rendering errors in your views - using the flash cookie
 + Putting authenticity tokens in your forms (`<input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">`)
 + Table column types of boolean (know default values; see: https://thoughtbot.com/blog/avoid-the-threestate-boolean-problem)
 + Handle nested `new` or nested `create` or neither nested (see https://github.com/appacademy/cohort-resources/blob/master/study_guides/rails/nested_routes.md)
++`edit` and `update` actions and views --- `new` and `create` 
 
 ### Study Tips
 
@@ -54,4 +59,4 @@ Good resource on this: https://github.com/appacademy/cohort-resources/blob/maste
   - You may be inclined to try to memorize the whole pattern but we do not recommend that. You can use some mnemonic devices to help you remember what methods you need for the User model for example (FGRIPE/FIG VAPER). You should still understand why you need each method, but memorizing the names might be helpful.
   - The test is more than just the auth pattern! Make sure you are comfortable with views and controllers and models and how they all work together at a high level.
   - Make sure to understand how Capybara finds elements on the page. In `rails_2_practice_solution/app/views/sessions/new.html.erb`, if we make the label `username` (lower case) or if we remove the `for` from the label, Capybara won't be able to find the input.
-  - There will be an optional assessment walkthrough on Monday in two parts, first during study hall and then over lunch.
+  - There will be an optional assessment walkthrough on Friday 

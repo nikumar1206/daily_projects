@@ -7,8 +7,8 @@ Let's start off with the usual:
 
 # Assessment
 - Practice is live
-- Office hours tomorrow (12-4)
-- Do the practice at least 5 times!
+- Office hours tomorrow (12-3)
+- Do the practice at least 5 times! Make sure you are timing each section
 - Take the practice in FULL at least once tonight so you can come to office tomorrow with context
 - ActiveRecord queries will use the same DB as movie buff
 - Associations will be explained in the README.

@@ -1,4 +1,4 @@
-require_relative '00_tree_node'
+require_relative 'polytree_node_solution/lib/00_tree_node.rb'
 
 class KnightPathFinder
   attr_reader :start_pos
@@ -86,7 +86,10 @@ class KnightPathFinder
   end
 end
 
-if $PROGRAM_NAME == __FILE__
-  kpf = KnightPathFinder.new([0, 0])
-  p kpf.find_path([7, 7])
-end
+# if $PROGRAM_NAME == __FILE__
+#   kpf = KnightPathFinder.new([0, 0])
+#   p kpf.find_path([7, 7])
+# end
+
+kfs = KnightPathFinder.new([4,4])
+p kfs

@@ -133,15 +133,17 @@ def sparse_continents
       c1.continent,
       c1.population
     FROM
-      countries c1
+      countries AS c1
     WHERE
       c1.continent NOT IN (
         SELECT
           c2.continent
         FROM
-          countries c2
+          countries AS c2
         WHERE
           c2.population >= 25000000
       );
   SQL
 end
+
+

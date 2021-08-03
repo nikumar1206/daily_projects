@@ -233,3 +233,35 @@ def colleagues_of_garfunkel
       ) AS a1 ON m1.id = a1.movie_id;
   SQL
 end
+
+
+##select all julie andrews movies
+
+    SELECT
+      *
+    FROM
+      movies
+    JOIN
+      castings julie_castings ON julie_castings.movie_id = movies.id
+    JOIN
+      actors julie_actors ON julie_castings.actor_id = julie_actors.id
+    WHERE
+      julie_actors.name = 'Julie Andrews';
+
+
+  # select
+      
+    SELECT
+      *
+    FROM
+      movies
+    JOIN
+      castings julie_castings ON julie_castings.movie_id = movies.id
+    JOIN
+      actors julie_actors ON julie_castings.actor_id = julie_actors.id
+    JOIN
+      castings lead_castings ON lead_castings.movie_id = movies.id
+    JOIN
+      actors lead_actors ON lead_castings.actor_id = lead_actors.id
+    WHERE
+      julie_actors.name = 'Julie Andrews' AND lead_castings.ord = 1;

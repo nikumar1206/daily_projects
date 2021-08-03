@@ -1,5 +1,4 @@
 ## Application Controller 
-- require_no_user!
 - current_user
 - logged_in?
 - login_user!

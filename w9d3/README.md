@@ -1,60 +1,32 @@
-# W9D3 
+# W9D4 
 **Today's learning goals**:
 
-**jQuery Tic Tac Toe**:
-* Be able to set up Webpack
-* Know how a frontend (this project) and backend (the Node version of this project) relate to and communicate with each other
-* Know how to use JQuery to manage the DOM
-  * Know how to query the DOM using JQuery
-  * Know how to change the DOM using JQuery
-  * Know how to create event listeners
-* Be able to use CSS to style a web page
+**AJAX Twitter**:
 
-**jQuery Towers of Hanoi**:
-* Be able to set up Webpack
-* Know how a frontend (this project) and backend (the Node version of this project) relate to and communicate with each other
-  * Know how to send and receive messages between the frontend and backend
-* Know how to use JQuery to toggle classes on HTML elements
-* Be able to use CSS to style a web page
-  * Be familiar with styling classes versus styling tags
+* Know how AJAX requests allow the frontend and backend to communicate
+* Be able to change the backend of an app by sending an AJAX request
+* Be able to change the frontend of an app with data from an AJAX response
+* Be able to write AJAX requests in an API Util file
+* Know the basics of how promises work
 
-- Go over TTT solutions. There are a bunch of debuggers in the front-end code and it's bundled up. If you need to re-bundle, run:
+**Elaborative Interrogation**:
+- How does an AJAX request work?
+- How does an AJAX request differ from a standard HTTP request?
+- How does AJAX allow the frontend to communicate with the backend and vice versa?
+- Why would we want to put our AJAX requests in an API Util file/object?
+- How does a promise work?
+- How do we tell a promise what to do on a successful request?  A failed request?
+- Why would we choose to use `.then` on our promises?
+- Why would we want to use AJAX requests?
 
-```bash
-webpack tic_tac_toe_solution/src/index.js -o tic_tac_toe_solution/dist/main.js --mode=development
-```
-
-  Talk about exactly what happens when we set everything up and what happens when we click on a square.
-
-- Take general questions about the assessment. (There's no study hall before the assessment.)
-- Make sure to mention:
-    - curry
-    - binarySearch
-    - mergeSort
-    - quickSort
-    - myBind/myCall/myApply
-
-- Maybe go over `binarySearch`:
-
-  ```js
-  function binarySearch(numbers, target) {
-    if (numbers.length === 0) {
-      return -1;
-    }
-
-    const probeIdx = Math.floor(numbers.length / 2);
-    const probe = numbers[probeIdx];
-
-    if (target === probe) {
-      return probeIdx;
-    } else if (target < probe) {
-      const left = numbers.slice(0, probeIdx);
-      return binarySearch(left, target);
-    } else {
-      const right = numbers.slice(probeIdx + 1);
-      const subProblem = binarySearch(right, target);
-
-      return subProblem === -1 ? -1 : subProblem + (probeIdx + 1);
-    }
-  }
-  ```
+# Discussion Topics
+- Today's flextime will focus mostly on A05. 
+    - Aim to spend at most 10-15 minutes on AJAX Twitter, then talk about the assessment. 
+- Explain the whole request-response cycle for the `Follow!`/`Unfollow!` button:
+  - Need to set everything up first, run this in the project directory:
+    ```bash
+    npm install && bundle install && bundle exec rails db:setup && bundle exec rails db:seed && be rails s
+    ```
+  - There are a bunch of debuggers in the frontend code and in the `FollowsController`.
+  - Go to a user show page. We will hit two debuggers when we create the `FollowToggle` instance.
+  - Click `Follow!`/`Unfollow!` and explain why we hit the debuggers in the frontend and the backend in the order in which we hit them.

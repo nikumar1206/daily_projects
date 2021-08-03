@@ -92,7 +92,7 @@ class LinkedList
     nil
   end
 
-  def each
+  def each 
     current_node = self.head.next
     until current_node == self.tail
       yield current_node

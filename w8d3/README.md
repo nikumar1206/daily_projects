@@ -1,29 +1,53 @@
-# W8D3
+# W8D4 
 
-**Today's learning goals**:
-# Intro exercises:
-* Be able to write the same types of functions you were able to write in Ruby
-* Know how to pass functions as arguments to other functions and call them as callbacks
-* Know how closures work
-* Know how JavaScript's prototypical inheritance works
-  * Know how to monkey-patch new methods onto a class in JavaScript
-# Towers of Hanoi:
-* Know how to use pseudocode to structure your reasoning
-* Be able to use JavaScript classes and objects in Node
-* Be able to use principle of object-oriented programming in JavaScript
-* Be comfortable testing methods as you write them
-* Be able to implement I/O using readline
+**Today's Learning Goals**
 
-# Discussion
-- Take questions on the day's projects, especially on monkey patching problems. 
-- Feel free to review syntax, closure, and callbacks since students are often still confused when it comes to reading javascript. 
-- Go over `myEach`.
-- Compare `myEach` with `myReduce`: Point out how the callback in `myEach` is only expecting one argument, and that’s the anonymous function we use in `myReduce`. `myEach` only has a _side-effect_, and the side-effect here is repeatedly reassigning the `initialValue` until the loop is finished. Name all of the callbacks different things so they don’t get confused.
-- Go over `bubbleSort`, since it touches on double assignment. A lot of them possibly didn’t know how to double assign in JavaScript. You just have to use array brackets. `[firstEl, secondEl] = [secondEl, firstEl]
-- Go over `transpose` and explain this:
-  ```javascript
-  Array.from({ length: this[0].length }, () =>
-    Array.from({ length: this.length })
-  );
-  ```
-  `Array.from` takes an "array-like" object as the first argument. An object with a `length` property is enough for that (show them in the console that arrays have a `length` property). So on its own, `Array.from({ length: 3 })` returns `[undefined, undefined, undefined]`. The second argument to `Array.from` is a call-back that maps over the array created so far. So `Array.from({ length: 3 })` returns `[undefined, undefined, undefined]`, and then if we map over that with `() => Array.from({ length: 2 })`, we get `[undefined, undefined]` for each position in the original array. So we end up with `[[undefined, undefined], [undefined, undefined], [undefined, undefined]]`.
+# Reversi: 
+- Be able to reason about object-oriented Javascript
+- Know the different ways that objects can interact with each other in JavaScript
+- Be able to write modular code
+- Know how to manually test your code as you write it
+- Be able to write a run-loop in JavaScript
+- Know how to use duck typing to allow for both a HumanPlayer and a ComputerPlayer
+
+# Discussion 
+
+- Take any questions about the Reversi project. 
+- Point out how context matters based off of how you invoke the function. 
+    - Focus mainly on context in regards to a callback. 
+    - We have a lecture on this later so no need to cover every way to invoke the function.
+```js
+Array.prototype.forEach = function(cb) {
+    for (let i = 0; i < this.length; i++){
+        cb(this[i])
+    }
+}
+
+cb = function(ele) {
+    console.log(this) // function style invocation, so `this` in the callback will always be the global object
+}
+
+[1,2,3,4,5].forEach(cb)
+```
+- Talk about how `return` in a `forEach` works like `next`. It will return from the inner callback but it will not return from the outer function. 
+```js
+function findTwo(array) {
+  array.forEach(el => {
+    console.log(el);
+    if (el === 2) return "I FOUND 2!"; // This returns from the callback; the arrow function, _not_
+  });
+  
+  return "I DIDNT FIND 2";
+}
+
+findTwo([1, 2, 3]);
+
+// OUTPUT 
+// 1
+// 2
+// 3
+// -> I DIDNT FIND 2 
+```
+
+- We are also going to go over `mergeSort` and `binarySearch`. 
+    - If there is time, whiteboard each out with your circle! 

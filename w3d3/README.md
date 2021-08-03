@@ -21,9 +21,15 @@
 
 ## Discussion
 
-Today is the last material that's fair game for a01. Tell them about a01p tomorrow morning and how they can best prepare for that.
+Today is the last material that's fair game for a01. 
 
-Students will likely still struggle with merge sort and quicksort at this point. We're going to go through merge sort at the beginning of lecture tomorrow. Let's use flex time to go over quicksort again. Explain the general idea of quicksort: Pick an arbitrary pivot, then divide all other elements into an array of elements smaller than or equal to the pivot and an array of elements larger than the pivot. Then quicksort those two arrays. Finally, put the sorted smaller elements together with the pivot and the sorted larger elements. Here's a sample implementation. Slowly write the code, explaining the rationale for each step. Make sure to also explain that we procify a block on line 6 and then we blockify a proc on lines 16 and 17. And explain the `||=`.
+Students will likely still struggle with merge sort and quicksort at this point. We're going to go through merge sort at the beginning of lecture tomorrow. Let's use flex time to go over quicksort again. 
+
+Explain the general idea of quicksort: Pick an arbitrary pivot, then divide all other elements into an array of elements smaller than or equal to the pivot and an array of elements larger than the pivot. Then quicksort those two arrays. Finally, put the sorted smaller elements together with the pivot and the sorted larger elements. 
+
+https://www.techiedelight.com/wp-content/uploads/Quicksort.png
+
+Here's a sample implementation. Slowly write the code, explaining the rationale for each step. Make sure to also explain that we procify a block on line 6 and then we blockify a proc on lines 16 and 17. And explain the `||=`.
 
 ```ruby
 class Array
@@ -35,7 +41,7 @@ class Array
     rest = self.drop(1)
 
     left = rest.select { |el| prc.call(el, pivot) < 0 }
-    right = rest.select { |el| prc.call(el, pivot) > -1 }
+    right = rest.select { |el| prc.call(el, pivot) >= 0 }
 
     left_sorted = left.quicksort(&prc)
     right_sorted = right.quicksort(&prc)

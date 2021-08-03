@@ -8,7 +8,7 @@
 
 ## Discussion
 
-Today's projects may require a broader review of OOP principles, expecially if student code differs markedly from the solutions. Students may want to see a lot in pry. Some highlights:
+Today's projects may require a broader review of OOP principles, especially if student code differs markedly from the solutions. Students may want to see a lot in pry. Some highlights:
 
 - The `Code` class has more examples of class methods and a class constant.
 - `Code#[]` and `Code#==` will be their first introduction to writing common methods like these.

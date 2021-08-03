@@ -30,7 +30,7 @@ class Hotel
     end
 
     success = @rooms[room_name].add_occupant(person)
-    if success
+    if success ##true/false
       puts "check in successful"
     else
       puts "sorry, room is full"

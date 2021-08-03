@@ -10,18 +10,39 @@
 - Migrations
 
 What is a migration? How does it relate to the schema? 
+-rails way of setting up our database
+-it is like the import file we wrote yesterday in our DIY ORM
+-create columns in our tables and columns, add db constraints, indicies, etc 
+-the migrations we run create our schema
+-a schema is a blueprint of our database, it gets updated by our migrations.  we don't edit our schema directly 
+    -db:setup runs off the schema, if they ask 
 
 Why are migrations valuable for project collaboration? 
+ -they allow other develops to see what changes have been made to the database
+ -migrations build upon the database, they allow us to stay in sync and everyone has a consistant record of changes made to the DB
 
 What are different types of associations and how do they differ?
+-belongs_to, associated with our foreign keys
+-has_many, these are the other side of the belongs_to
+-has_one, like has many but just referencing one element. 
+----
+-has_many_through, which are multi-table joins associations
+-belongs_to and has many can stand alone 
 
 How does an association relate to the SQL language? 
+-they are our way of creating joins between tables in rails
 
 What is a model? Why do we use models?
+-they are Ruby classes that represent our tables and allow us to make class instances from data in our tables
 
 Why do we use database and model level validations? 
+-these are two separate levels of validation, independent of each other
+-db level validation protect the database, this is more important so that developers don't mess with the tables
+-model level validations are usually what user facing activity will hit
+-it's important to have both for 2 levels of security 
 
 What is an options hash and why do we use them? 
+-these are the arguments that are passed into the belongs_to, has_many (optional: true, etc), and in our validations.  It allows us to pass specificaitons dynamically without worrying about order
 
 
 ## Learning Goals

@@ -6,8 +6,8 @@ class GoalsController < ApplicationController
         @goal = Goal.new(goal_params)
         @goal.user_id = params[:user_id]
 
-        if @goal.save
-        else
+        unless @goal.save
+        
             flash[:errors] = @goal.errors.full_messages
         end
         #  we are redirecting to the same url no matter what

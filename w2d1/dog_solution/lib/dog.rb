@@ -1,5 +1,7 @@
+require 'byebug'
 class Dog
   def initialize(name, breed, age, bark, favorite_foods)
+
     @name = name
     @breed = breed
     @age = age
@@ -11,7 +13,7 @@ class Dog
     @name
   end
 
-  def breed
+  def breed 
     @breed
   end
 

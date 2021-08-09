@@ -1,3 +1,5 @@
+## W8D4 - The Event Loop ##
+
 **Today's learning goals**:
 
 **Callbacks**:
@@ -6,13 +8,6 @@
 * Be able to set the context of a function
 * Know how to use callbacks to enforce the order of asynchronous function calls
 * Know how to write myBind
-
-**Towers of Hanoi**:
-* Know how to use pseudocode to structure your reasoning
-* Be able to use JavaScript classes and objects in Node
-  * Be able to use principle of object-oriented programming in JavaScript
-* Be comfortable testing methods as you write them
-* Be able to implement I/O using readline
 
 **TicTacToe**:
 * Be able to write object-oriented JavaScript programs comfortably

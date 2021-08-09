@@ -1,4 +1,4 @@
-# W9D3 
+# W9D2 
 **Today's learning goals**:
 
 **jQuery Tic Tac Toe**:
@@ -9,14 +9,6 @@
   * Know how to change the DOM using JQuery
   * Know how to create event listeners
 * Be able to use CSS to style a web page
-
-**jQuery Towers of Hanoi**:
-* Be able to set up Webpack
-* Know how a frontend (this project) and backend (the Node version of this project) relate to and communicate with each other
-  * Know how to send and receive messages between the frontend and backend
-* Know how to use JQuery to toggle classes on HTML elements
-* Be able to use CSS to style a web page
-  * Be familiar with styling classes versus styling tags
 
 - Go over TTT solutions. There are a bunch of debuggers in the front-end code and it's bundled up. If you need to re-bundle, run:
 

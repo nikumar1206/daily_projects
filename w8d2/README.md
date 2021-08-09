@@ -1,4 +1,4 @@
-# W8D3
+# W8D2
 
 **Today's learning goals**:
 # Intro exercises:

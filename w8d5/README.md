@@ -1,4 +1,4 @@
-# W9D1
+# W8D5
 
 **Today's learning goals**:
 
@@ -41,7 +41,3 @@
     ```
 - Talk about `[] !== [] // true` and talk about how we would compare arrays.
 - Review `inherits2`.
-
-# Assessment
-- A05 is on Friday
-- This is more time than any other cohort has gotten before, they will be fine! 

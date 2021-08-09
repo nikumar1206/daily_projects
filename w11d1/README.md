@@ -1,3 +1,5 @@
+# W11D1 - React Minesweeper
+
 - Nice work today solidifying React concepts! 
 - Tomorrow we will talk about Redux, 
     - Please make sure to do the readings/homework tonight. 

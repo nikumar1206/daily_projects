@@ -13,8 +13,8 @@
   + The session cookie that we used today and the flash cookie.
 - What does it mean to be logged into our web app? 
   + To be logged in means to have the session_token key-value pair on the session cookie equal to the session_token a user has stored in the db.
-- Why do we need the auth token? 
-  + We need the auth token to identify us and create the logged in state. We hstore the token on the session cookie to persist the logged
+- Why do we need the session token? 
+  + We need the session token to identify us and create the logged in state. We hstore the token on the session cookie to persist the logged
  _in state between (stateless) http requests.
 - How can we tell if the user input the correct password? 
   + We can do so by constructing a BCrypt object from our saved password_digest and use the built in bcrypt method of is_password? / use '==' with the object and the plain text password.

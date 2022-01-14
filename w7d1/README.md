@@ -10,7 +10,7 @@
 - What is a cookie and why do we use them?
 - What are the cookies that rails provides for us? 
 - What does it mean to be logged into our web app? 
-- Why do we need the auth token? 
+- Why do we need the session token? 
 - How can we tell if the user input the correct password? 
 - How do we determine who the current user is? 
 - Explain what happens when we log a user out. 

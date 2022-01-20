@@ -24,8 +24,8 @@ Some of them will still hate CSS after today. Tell them that styling is importan
 ## Rails 2 Prep
 
 - Take any questions on Rails 2 practice assessment. 
-- Remind them about the walkthrough on Monday and encourage them to write down questions over the weekend so they can come prepared to that.
-- Come to office hours (zoom) tomorrow, ostensibly 12-4 
+- Remind them about the walkthrough on Friday and encourage them to write down questions so they can come prepared to that.
+- Come to office hours (zoom) Saturday, 12-4 
 - Save a version completed through Controllers to get in more Views reps
 - One tip (that will help mitigate a small bug in the practice assessment) is that they do NOT need to write an database validations in their migrations. Talking about the bug itself will likely lead to confusion, so simply present it as a time-saving strategy. 
 - You can make all methods public for the purpose of the test.

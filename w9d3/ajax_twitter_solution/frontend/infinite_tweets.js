@@ -1,6 +1,6 @@
 const APIUtil = require('./api_util');
 
-const _ = require('lodash');
+// const _ = require('lodash');
 
 class InfiniteTweets {
   constructor(el) {

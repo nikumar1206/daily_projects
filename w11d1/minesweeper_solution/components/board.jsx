@@ -22,11 +22,11 @@ class Board extends React.Component{
   renderRows() {
     const board = this.props.board;
     return board.grid.map( (row, i) => {
-      return (
+      // return (
         <div className="row" key={`row-${i}`}>
           {this.renderTiles(row, i)}
         </div>
-      );
+      // );
     });
   }
 

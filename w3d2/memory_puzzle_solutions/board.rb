@@ -48,6 +48,7 @@ class Board
     rows.each_with_index do |row, i|
       puts "#{i} #{row.join(' ')}"
     end
+    nil
   end
 
   def revealed?(pos)
